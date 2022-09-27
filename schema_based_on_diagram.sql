@@ -59,3 +59,5 @@ CREATE INDEX medical_history_id ON invoices (medical_history_id);
 CREATE INDEX invoice_id ON invoices_items (invoice_id);
 
 CREATE INDEX treatment_id ON invoices_items (treatment_id);
+
+CREATE INDEX medical_histories_id ON join_table_medical_histories_treatments (medical_histories_id);
