@@ -52,3 +52,10 @@ CREATE TABLE join_table_medical_histories_treatments (
 
 
 ---------------CREATE INDEXED FOR FK
+CREATE INDEX patient_id ON medical_histories (patient_id);
+
+CREATE INDEX medical_history_id ON invoices (medical_history_id);
+
+CREATE INDEX invoice_id ON invoices_items (invoice_id);
+
+CREATE INDEX treatment_id ON invoices_items (treatment_id);
